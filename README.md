@@ -13,7 +13,7 @@ Bonuses:
 
 # dependencies
 - terraform
-- aws credentials
+- aws account and credentials
 
 # folder structure
 ```
@@ -26,3 +26,9 @@ Bonuses:
 ```
 
 *services should contain everything needed for that service in the folder.  parameterizing resources such as storage for reuse would be redundant.  But services (or microservices) is a good level*
+
+# TODO's
+- vpc
+- security group
+- sizing options
+- additional deployments
