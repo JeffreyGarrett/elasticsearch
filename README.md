@@ -16,10 +16,19 @@ Bonuses:
 - aws credentials
 
 # folder structure
+|-- deployment
+    |--local
+    |--prod
+|-- modules
+    |-- provider
+        |-- services
 
-|── deployment    (where your deploying infrastructure)
+|--deployment    (where your deploying infrastructure)
+
     |── local     (best to keep a local one for deploying test clusters)
+
     |── prod
+
 |── modules        (all modules here)
     |── provider         (align by provider)
         |── services  (followed by the services in the folder)
