@@ -68,15 +68,31 @@ variable "es_security_group_ids" {
 variable "es_subnet_id" {
   description = "subnet id of VPC"
   default     = ""
+  type        = "string"
 }
 
 #log_publishing_options
 variable "es_log_enabled" {
   description = "description"
   default     = "false"
+  type        = "string"
 }
 
 variable es_log_type {
   description = "log type of to publish"
   default     = ""
+  type        = "string"
+}
+
+variable "es_identity_pool_id" {
+  description = "identity pool for kibana access"
+  type        = "string"
+}
+
+variable "es_user_pool_id" {
+  description = "es user pool id for kibana access"
+}
+
+variable "es_cognito_role" {
+  description = "the cognito role for es that allows access through cognito"
 }
